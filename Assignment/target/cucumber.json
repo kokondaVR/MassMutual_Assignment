@@ -1,0 +1,144 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Pre-scenario steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3286547200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "We open the url \"https://www.excercise1.com/values\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.excercise1.com/values",
+                  "offset": 17
+                }
+              ],
+              "location": "del.we_open_the_url(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Verify values on the landing page",
+        "description": "",
+        "id": "solution-to-problem1;verify-values-on-the-landing-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 340800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "We verify the right count of \"5\" values appear on the screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 30
+                }
+              ],
+              "location": "del.we_verify_the_right_count_of_values_appear_on_the_screen(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 265200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "We verify the values are formatted as currencies",
+            "match": {
+              "location": "del.we_verify_the_values_are_formatted_as_currencies()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 287000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "We verify the values on the screen are greater than \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 53
+                }
+              ],
+              "location": "del.we_verify_the_values_on_the_screen_are_greater_than(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2112400,
+              "error_message": "java.lang.AssertionError: Total calculated balance 1000000.0 does not match the sum of all values: 997000.0\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat step_files.del.we_verify_the_total_balance_is_correct_based_on_the_values_listed_on_the_screen(del.java:86)\r\n\tat ✽.And We verify the total balance is correct based on the values listed on the screen(MassMutual_Assignment.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "We verify the total balance is correct based on the values listed on the screen",
+            "match": {
+              "location": "del.we_verify_the_total_balance_is_correct_based_on_the_values_listed_on_the_screen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "We verify the total balance matches the sum of the values",
+            "match": {
+              "location": "del.we_verify_the_total_balance_matches_the_sum_of_the_values()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Logout",
+            "match": {
+              "location": "del.logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Objectives"
+          }
+        ]
+      }
+    ],
+    "name": "Solution to Problem1",
+    "description": "",
+    "id": "solution-to-problem1",
+    "keyword": "Feature",
+    "uri": "MassMutual_Assignment.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Problem1"
+      }
+    ]
+  }
+]

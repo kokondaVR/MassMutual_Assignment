@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="3.289553">
+<testcase classname="Solution to Problem1" name="Verify values on the landing page" time="3.289553">
+<failure message="java.lang.AssertionError: Total calculated balance 1000000.0 does not match the sum of all values: 997000.0&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:94)&#13;&#10;&#9;at step_files.del.we_verify_the_total_balance_is_correct_based_on_the_values_listed_on_the_screen(del.java:86)&#13;&#10;&#9;at ✽.And We verify the total balance is correct based on the values listed on the screen(MassMutual_Assignment.feature:12)&#13;&#10;"><![CDATA[Given We open the url "https://www.excercise1.com/values"...................passed
+And We verify the right count of "5" values appear on the screen............passed
+And We verify the values are formatted as currencies........................passed
+And We verify the values on the screen are greater than "0".................passed
+And We verify the total balance is correct based on the values listed on the screen.failed
+And We verify the total balance matches the sum of the values...............skipped
+And Logout..................................................................skipped
+
+StackTrace:
+java.lang.AssertionError: Total calculated balance 1000000.0 does not match the sum of all values: 997000.0
+	at org.testng.Assert.fail(Assert.java:94)
+	at step_files.del.we_verify_the_total_balance_is_correct_based_on_the_values_listed_on_the_screen(del.java:86)
+	at ✽.And We verify the total balance is correct based on the values listed on the screen(MassMutual_Assignment.feature:12)
+]]></failure>
+</testcase>
+</testsuite>
