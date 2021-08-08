@@ -1,5 +1,5 @@
-@Problem1
-Feature: Solution to Problem1
+@Excercise1
+Feature: Solution to Excercise1
 
 Background: Pre-scenario steps
 Given We open the url "https://www.excercise1.com/values"

@@ -7,11 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 
-import page_objects.Excercise1;
+import page_objects.Page_Excercise1;
 
 public class DriverFactory {
 	
-	private DriverFactory(){}; //Singleton class for driver factory to return only one instance of WebDriver object
+	private DriverFactory(){}; //Singleton class for driver factory to create and return only one instance of WebDriver object at any time
 	
 	public static WebDriver driver = getDriver();
 	
@@ -33,14 +33,15 @@ public class DriverFactory {
 		return driver;
 	}
 	
+	private static void InitPageObjElements() {
+		PageFactory.initElements(driver, Page_Excercise1.class);
+	}
+	
 	public static void stopDriver() {
 		if(driver != null) {
 			driver.quit();
 		}
 		driver = null;
 	}
-	
-	private static void InitPageObjElements() {
-		PageFactory.initElements(driver, Excercise1.class);
-	}
+
 }

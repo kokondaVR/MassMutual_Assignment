@@ -10,10 +10,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions (
 	features = {"src/main/java/features/"},
-	glue = {"step_files"},
+	glue = {"step_definitions"},
 	monochrome = true,
 	dryRun = false,
-	tags = {},
+	tags = {},	//no tags means all features and scenarios run
 	strict = false,
 	plugin = 
 			{
@@ -21,9 +21,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				"html:target/cucumber",
 				"json:target/cucumber.json",
 				"junit:target/cucumber.xml",
-				"rerun:target/rerun.txt",
-				"com.cucumber.listener.ExtentCucumberFormatter:target/report.html"	//plugin for auto generating extent report
+				"rerun:target/rerun.txt",	//Useful to rerun failed cases
+				"com.cucumber.listener.ExtentCucumberFormatter:target/report.html"	//Plugin for auto generating extent report
 			}
 )
 
-public class Runner_Dashboard extends AbstractTestNGCucumberTests {}
+public class Runner_Excercise1 extends AbstractTestNGCucumberTests {}

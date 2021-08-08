@@ -1,1 +1,7 @@
 /META-INF/
+/page_objects/
+/step_files/
+/utilities/
+/runners/
+/step_definitions/
+/features/
